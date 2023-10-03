@@ -15,7 +15,35 @@ h1,h2,h3,h4,h5,h6, span, i {
     --clr-secondary: #ff4d00;
     --clr-white: #fff;
 }
+.main-btn {
+    width: 200px;
+    height: 60px;
+    border: 2px solid var(--clr-secondary);
+    background: transparent;
+    color: var(--clr-white);
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.profil button::before {
 
+    width: 0%;
+    height: 100%;
+    background: var(--clr-secondary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--clr-white);
+    transition: .5s ease;   
+    content: '';
+    z-index: -1;
+}
+.profil button:hover::before {
+    width: 100%;
+
+}
 /* Section landing */
 .landing {
     background-image: url(/img/Background.jpg);
