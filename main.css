@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6, span, i {
 }
 /* Section landing */
 .landing {
-    background-image: url(/img/Background.jpg);
+    background-image: url(img/Background.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
